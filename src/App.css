@@ -1,12 +1,10 @@
 .App {
   text-align: center;
   height: 100%;
-
 }
 
 img {
   z-index: 1;
-
 }
 
 .title-block {
@@ -33,11 +31,13 @@ img {
   color: white;
   font-size: 7rem;
   letter-spacing: -5px;
+  -webkit-text-stroke: 1px #ababff47;
 }
 
 .title p {
   font: normal normal normal 32px/40px verdana, geneva, sans-serif;
   color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0.01rem #ababffad;
 }
 
 .acquaintance {
@@ -70,8 +70,8 @@ img {
   font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
   font-weight: bold;
   letter-spacing: 0.14em;
+  color: #898989;
 }
-
 
 .rhombus-block {
   margin: 50px 0;
@@ -106,7 +106,6 @@ img {
 .history-acquaintance-text {
   width: 800px;
   margin: 0 auto 100px auto;
-
 }
 
 .history-acquaintance-text p {
@@ -114,10 +113,9 @@ img {
   text-align: center;
   font-size: 16px;
 
-  font: normal normal normal 16px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  font: normal normal normal 16px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
   color: rgb(143, 133, 133);
   line-height: 2rem;
-
 }
 
 .history-acquaintance-img img {
@@ -125,12 +123,10 @@ img {
   height: 700px;
   object-fit: cover;
   object-position: 50% 0%;
-
 }
 
 .wedding {
   background-color: #f6fcff;
-
 }
 
 .wedding-block {
@@ -158,7 +154,6 @@ img {
   color: rgb(66, 97, 122);
   font: normal normal normal 24px/1.4em georgia, palatino, "book antiqua", "palatino linotype", serif;
   padding-bottom: 20px;
-
 }
 
 .where {
@@ -223,6 +218,7 @@ body {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 3vw);
   grid-gap: 0.5rem;
+  margin-bottom: 60px;
 }
 
 .gallery__img {
@@ -241,6 +237,10 @@ body {
   /** Alternative Syntax **/
   /* grid-column: 1 / span 2;  */
   /* grid-row: 1 / span 2; */
+}
+.gallery__item--1 img {
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .gallery__item--2 {
@@ -264,6 +264,10 @@ body {
   /* grid-column: 5 / span 4;
   grid-row: 1 / span 5; */
 }
+.gallery__item--3 img {
+  object-fit: cover;
+  object-position: 50% 20%;
+}
 
 .gallery__item--4 {
   grid-column-start: 4;
@@ -274,6 +278,10 @@ body {
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4;  */
   /* grid-row: 3 / span 3; */
+}
+.gallery__item--4 img {
+  object-fit: cover;
+  object-position: 50% 30%;
 }
 
 .gallery__item--5 {
@@ -297,6 +305,10 @@ body {
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
+.gallery__item--6 img {
+  object-fit: cover;
+  object-position: 0% 70%;
+}
 
 .figure:hover {
   background-color: #333;
@@ -308,13 +320,47 @@ button {
   border-radius: 0;
   font: normal normal normal 18px/22px helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
   color: rgb(255, 255, 255);
-  background: rgb(51, 66, 78);
+  background: #6191b7;
   border: 0;
+  padding: 0 10px;
+}
+button:hover{
+  background: #417cac;
+
 }
 
+.prefooter {
+  height: 150px;
+  width: 100%;
+  background-color: #e8f6ff;
+  color: black;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 100%;
+  background-color: #6191b7;
+  color: black;
+}
+.footer img {
+  margin: 0 auto;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.footer p {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
 @media (max-width: 800px) {
   body {
-    background-size: unset;
+    background-size: auto 80vh;
+    background-repeat: no-repeat;
+    background-position: right 0 ;
+
   }
 
   .title h1 {
@@ -334,7 +380,6 @@ button {
   }
 
   .acquaintance-title span {
-
     letter-spacing: unset;
   }
 
@@ -353,7 +398,12 @@ button {
   }
 
   .when-where {
-
     width: 90%;
+  }
+}
+
+@media (max-width: 690px) {
+  .gallery {
+    display: block;
   }
 }

@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./assets/img/1.webp) no-repeat fixed;
+  /* background: url(./assets/img/1.webp) no-repeat fixed; */
+  background: url(./assets/imgSanya/3.JPG) no-repeat fixed;
 
   background-size: 100%;
   background-color: #f6fcff;
