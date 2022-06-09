@@ -100,7 +100,7 @@ img {
   margin: 0 auto;
   text-align: center;
   background-color: #f6fcff;
-width: 100%;
+  width: 100%;
 }
 
 .history-acquaintance-text {
@@ -138,7 +138,7 @@ width: 100%;
   top: -100px;
   background-color: #f6fcff;
   padding: 50px 0;
-  max-width: 90%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -310,4 +310,38 @@ button {
   color: rgb(255, 255, 255);
   background: rgb(51, 66, 78);
   border: 0;
+}
+
+@media (max-width: 800px) {
+
+  .title h1 {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 0px;
+  }
+
+  .title-block {
+    height: 80vh;
+    width: 100%;
+  }
+
+  .history-acquaintance-text {
+    width: 100%;
+    margin: 0 auto 100px auto;
+  }
+
+  .acquaintance-title span {
+
+    letter-spacing: unset;
+  }
+
+  .acquaintance-title span {
+    font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+  }
+
+  .acquaintance-title h1 {
+    font-size: 36px;
+  }
 }
