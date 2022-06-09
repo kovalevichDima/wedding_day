@@ -313,6 +313,9 @@ button {
 }
 
 @media (max-width: 800px) {
+  body {
+    background-size: unset;
+  }
 
   .title h1 {
     color: white;
@@ -343,5 +346,14 @@ button {
 
   .acquaintance-title h1 {
     font-size: 36px;
+  }
+
+  .wedding-block {
+    max-width: 100%;
+  }
+
+  .when-where {
+
+    width: 90%;
   }
 }
