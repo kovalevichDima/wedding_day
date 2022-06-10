@@ -92,7 +92,7 @@ function App() {
                     Когда
                   </div>
                   <div className='date'>
-                    10 июня 2022 г., 19:00
+                    10 июня 2022 г., 10:00
                   </div>
                 </div>
                 <div className='col-2'>
