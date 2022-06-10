@@ -238,6 +238,7 @@ body {
   /* grid-column: 1 / span 2;  */
   /* grid-row: 1 / span 2; */
 }
+
 .gallery__item--1 img {
   object-fit: cover;
   object-position: 50% 50%;
@@ -264,6 +265,7 @@ body {
   /* grid-column: 5 / span 4;
   grid-row: 1 / span 5; */
 }
+
 .gallery__item--3 img {
   object-fit: cover;
   object-position: 50% 20%;
@@ -279,6 +281,7 @@ body {
   /* grid-column: 1 / span 4;  */
   /* grid-row: 3 / span 3; */
 }
+
 .gallery__item--4 img {
   object-fit: cover;
   object-position: 50% 30%;
@@ -305,6 +308,7 @@ body {
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
+
 .gallery__item--6 img {
   object-fit: cover;
   object-position: 0% 70%;
@@ -324,7 +328,8 @@ button {
   border: 0;
   padding: 0 10px;
 }
-button:hover{
+
+button:hover {
   background: #417cac;
 
 }
@@ -335,6 +340,7 @@ button:hover{
   background-color: #e8f6ff;
   color: black;
 }
+
 .footer {
   position: absolute;
   left: 0;
@@ -344,23 +350,25 @@ button:hover{
   background-color: #6191b7;
   color: black;
 }
+
 .footer img {
   margin: 0 auto;
   margin-top: 60px;
   cursor: pointer;
 }
+
 .footer p {
   font-size: 15px;
   margin-top: 10px;
   font-weight: 600;
   cursor: pointer;
 }
+
 @media (max-width: 800px) {
   body {
     background-size: auto 80vh;
     background-repeat: no-repeat;
-    background-position: right 0 ;
-
+    background-position: right 0;
   }
 
   .title h1 {
@@ -405,5 +413,10 @@ button:hover{
 @media (max-width: 690px) {
   .gallery {
     display: block;
+  }
+
+  .wedding-block h1 {
+
+    font-size: 35px;
   }
 }
