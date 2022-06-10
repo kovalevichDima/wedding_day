@@ -80,7 +80,7 @@ function App() {
         <div className='wedding'>
           <div className='wedding-block'>
             <div>
-              <h1>Свадьба</h1>
+              <h1>Бракосочетание</h1>
             </div>
             <div className='rhombus-block'>
               <div className='rhombus' />
